@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-logicproof
 Version:	20140327
-Release:	2
+Release:	3
 Summary:	Box proofs for propositional and predicate logic
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/logicproof
