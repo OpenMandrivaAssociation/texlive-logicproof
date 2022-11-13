@@ -1,19 +1,13 @@
-# revision 33254
-# category Package
-# catalog-ctan /macros/latex/contrib/logicproof
-# catalog-date 2014-03-27 18:52:36 +0100
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-logicproof
-Version:	20190228
+Version:	33254
 Release:	1
 Summary:	Box proofs for propositional and predicate logic
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/logicproof
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ style similar to that used in "Logic in Computer Science" by
 Huth and Ryan.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,8 @@ Huth and Ryan.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
