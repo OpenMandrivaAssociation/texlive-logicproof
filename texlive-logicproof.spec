@@ -1,6 +1,6 @@
 Name:		texlive-logicproof
 Version:	33254
-Release:	1
+Release:	2
 Summary:	Box proofs for propositional and predicate logic
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/logicproof
