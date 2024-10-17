@@ -3,7 +3,7 @@ Version:	33254
 Release:	2
 Summary:	Box proofs for propositional and predicate logic
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/logicproof
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/logicproof
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/logicproof.doc.r%{version}.tar.xz
